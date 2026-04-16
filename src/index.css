@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* LinkedIn Design System - All colors in HSL */
+
+@layer base {
+  :root {
+    --background: 36 14% 93%;
+    --foreground: 0 0% 0%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    --primary: 210 83% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 11% 96%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 210 11% 96%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 210 11% 96%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 11% 87%;
+    --input: 210 11% 87%;
+    --ring: 210 83% 40%;
+
+    --radius: 0.5rem;
+
+    /* LinkedIn-specific tokens */
+    --linkedin-blue: 210 83% 40%;
+    --linkedin-green: 157 99% 23%;
+    --linkedin-text-primary: 0 0% 0%;
+    --linkedin-text-secondary: 0 0% 40%;
+    --linkedin-bg-page: 36 14% 93%;
+    --linkedin-bg-card: 0 0% 100%;
+    --linkedin-border: 210 11% 87%;
+    --linkedin-hover: 210 11% 96%;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 0%;
+    --sidebar-primary: 210 83% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 11% 96%;
+    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-border: 210 11% 87%;
+    --sidebar-ring: 210 83% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* LinkedIn scrollbar style */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
